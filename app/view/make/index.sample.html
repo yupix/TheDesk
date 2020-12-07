@@ -20,7 +20,11 @@
 		_jipt.push(['project', 'thedesk'])
 	</script>
 	<script type="text/javascript" src="https://cdn.crowdin.com/jipt/jipt.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	@@comment-end@@ @@pwa@@ @@store@@
+	<style>
+		
+	</style>
 </head>
 
 <body class="@@pwaClass@@">
@@ -54,7 +58,29 @@
 		<!--スターター-->
 		<div id="start" class="scr">
 			<div id="start-content">
-				<h3 class="center">@@demoBottomBtns@@</h3>
+				<h3>@@demoBottomBtns@@</h3>
+				<ul class="collection">
+					<li class="collection-item avatar">
+						<i class="material-icons circle">account_circle</i>
+						<span class="title">@@acctMan@@</span>
+						<p>@@acctManDesc@@</p>
+					</li>
+					<li class="collection-item avatar">
+						<i class="material-icons circle">settings</i>
+						<span class="title">@@setting@@</span>
+						<p>@@settingDesc@@</p>
+					</li>
+					<li class="collection-item avatar">
+						<i class="material-icons circle green">remove_from_queue</i>
+						<span class="title">@@nanoDes@@TheDesk Nano</span>
+						<p>@@nanoDescPlus@@</p>
+					</li>
+					<li class="collection-item avatar">
+						<i class="material-icons circle red">apps</i>
+						<span class="title">@@menu@@</span>
+						<p>@@menuDesc@@</p>
+					</li>
+				</ul>
 				@@lookAtBottom@@
 				<div id="demobottom">
 					<button class="btn waves-effect"
@@ -68,30 +94,9 @@
 								<i class="material-icons nex big-icon"
 									title="@@acctMan@@(Ctrl+Shift+M)">account_circle</i>
 							</a>
-							<a href="#" class="nex waves-effect">
-								<i class="material-icons nex" title="@@setting@@(Ctrl+Shift+S)">settings</i>
-							</a>
-							<a class="nex waves-effect">
-								<i class="material-icons" title="@@nanoDes@@TheDesk Nano">remove_from_queue</i>
-							</a>
-							<a class="nex waves-effect" id="list-tgl">
-								<i class="material-icons" title="@@menu@@">apps</i>
-							</a>
 						</div>
 					</div>
 				</div>
-				<br />
-				<i class="material-icons nex big-icon">account_circle</i>: @@acctMan@@<br />
-				@@acctManDesc@@
-				<hr />
-				<i class="material-icons nex">settings</i>: @@setting@@<br />
-				@@settingDesc@@
-				<hr />
-				<i class="material-icons nex">remove_from_queue</i>: TheDesk Nano @@nanoDes@@<br />
-				@@nanoDescPlus@@
-				<hr />
-				<i class="material-icons nex">apps</i>: @@menu@@<br />
-				@@menuDesc@@<br />
 				<br />
 				<button class="btn waves-effect" onclick="closeStart()" style="width: 300px;">
 					@@close@@
@@ -784,8 +789,10 @@
 				困ったときは、<a href="https://docs.thedesk.top">TheDesk Docs</a>をご覧ください。
 				<h5>Release Note 22.0.0 (Koume)</h5>
 				<!--上のdivのidも変えてね-->
-				・AiScript TheDesk Pluginの実装  <a onclick="udgEx('Cutls@cutls.com','main')" class="contributor"><img src="https://media.thedesk.top/accounts/avatars/000/000/001/original/d34ef8bb49d5e011.png">cutls</a><br>
-・細かいバグの修正  <a onclick="udgEx('Cutls@cutls.com','main')" class="contributor"><img src="https://media.thedesk.top/accounts/avatars/000/000/001/original/d34ef8bb49d5e011.png">cutls</a><br>
+				・AiScript TheDesk Pluginの実装 <a onclick="udgEx('Cutls@cutls.com','main')" class="contributor"><img
+						src="https://media.thedesk.top/accounts/avatars/000/000/001/original/d34ef8bb49d5e011.png">cutls</a><br>
+				・細かいバグの修正 <a onclick="udgEx('Cutls@cutls.com','main')" class="contributor"><img
+						src="https://media.thedesk.top/accounts/avatars/000/000/001/original/d34ef8bb49d5e011.png">cutls</a><br>
 
 			</div>
 			<div id="release-en" style="display:none">
@@ -1098,17 +1105,15 @@
 				<div class="stw" style="display: none">@@helloTheDesk@@</div>
 			</div>
 		</div>
+		<div style="position:fixed; z-index: 1200;  margin-left: 85%; bottom: 10%">
+			<button id="posttgl" class="btn waves-effect btn-floating btn-large" style="z-index: 1500; font-size: 2em;">
+				<i class="material-icons">edit</i>
+			</button>
+		</div>
 	</div>
 	<!--bottom-->
 	<div id="bottom" class="reverse hide">
 		<div class="leftside reverse">
-			<div id="dambox">
-				<button id="posttgl" class="btn waves-effect"
-					style="width: 100%;height: 2.5rem;line-height: 0;margin: 0;">
-					<i class="material-icons"
-						style="position: relative; top: 0.38rem; font-size: 1.5rem; text-align: center; margin-right: 0.76rem;">edit</i>@@toot@@
-				</button>
-			</div>
 			<div class="leftside reverse" id="group">
 				<div class="btnsgroup">
 					<a href="acct.html" class="nex waves-effect">

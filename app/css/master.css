@@ -232,11 +232,13 @@ blockquote:before,
 	width: 100vw;
 	height: calc(100vh - 3rem);
 	background-color: var(--bg);
-	filter: brightness(50%);
 	color: var(--text);
 	z-index: 99999;
 	justify-content: center;
 	align-items: center;
+}
+.collection-item.avatar {
+	background-color:  hsl(30, 100%, var(--bg));
 }
 #drag {
 	display: none;
