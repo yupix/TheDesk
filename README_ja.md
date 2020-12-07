@@ -18,6 +18,11 @@ Download:[TheDesk](https://thedesk.top) [![check](https://status.cutls.com/badge
 
 ![Screenshots1](https://thedesk.top/img/scr1.png)  
 
+## 本家様との変更点
+
+- デザインの変更
+  - デザインを多数変更しています
+
 ## ライセンス
 
 [GNU General Public License v3.0](https://github.com/cutls/TheDesk/blob/master/LICENSE)  
